@@ -144,10 +144,24 @@
     animation: driftRightBottom 21s ease-in-out infinite;
   }
 
-  /* Hide floating photos on narrow mobile screens so content is 100% crisp */
+  /* Responsive floating photos: always visible on all devices, subtle and non-intrusive on smaller screens */
   @media (max-width: 1200px) {
     .photo-frame {
-      display: none !important;
+      opacity: 0.38 !important;
+      z-index: 0 !important;
+      pointer-events: none;
+      filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
+    }
+  }
+  @media (max-width: 768px) {
+    .photo-frame {
+      width: 160px !important;
+      height: 230px !important;
+      opacity: 0.28 !important;
+      padding: 6px 6px 22px 6px !important;
+    }
+    .photo-frame .sticker {
+      font-size: 10px !important;
     }
   }
 
