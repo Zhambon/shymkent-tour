@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Шымкент — Гастрономическая Столица | Проект: Менеджер по туризму Жәнібек</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
   :root {
     --primary: #0f172a;
@@ -29,9 +29,11 @@
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: #070b14;
     color: var(--primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* ================= VIBRANT PERMANENT FLOATING POLAROID PHOTOS ================= */
@@ -70,13 +72,14 @@
 
   .photo-frame .sticker {
     position: absolute;
-    bottom: 7px;
+    bottom: 6px;
     left: 50%;
-    transform: translateX(-50%);
-    font-size: 11px;
-    font-weight: 800;
+    transform: translateX(-50%) rotate(-1deg);
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
     color: #0f172a;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     white-space: nowrap;
   }
 
@@ -181,8 +184,8 @@
       padding: 5px 5px 22px 5px;
     }
     .photo-frame .sticker {
-      font-size: 8px;
-      bottom: 5px;
+      font-size: 11px;
+      bottom: 4px;
     }
   }
 
@@ -207,10 +210,11 @@
     align-items: center;
     gap: 10px;
     color: #ffffff;
-    font-size: 15px;
-    font-weight: 800;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
     text-decoration: none;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
   .nav-brand span {
     color: var(--amber);
@@ -328,12 +332,13 @@
   }
 
   .slide-title {
+    font-family: 'Lora', Georgia, serif;
     font-size: 28px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary);
-    line-height: 1.25;
+    line-height: 1.35;
     margin-bottom: 22px;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
   }
   .slide-title span {
     color: var(--amber);
@@ -367,20 +372,21 @@
   }
   .guide-tag {
     font-size: 11px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--amber-dark);
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
   .guide-name {
-    font-size: 20px;
-    font-weight: 900;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 21px;
+    font-weight: 700;
     color: var(--primary);
   }
   .guide-desc {
     font-size: 13px;
     color: #78350f;
-    line-height: 1.35;
+    line-height: 1.4;
   }
 
   /* Grids */
@@ -409,8 +415,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 17px;
-    font-weight: 750;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 17.5px;
+    font-weight: 600;
     color: var(--primary);
     margin-bottom: 12px;
     padding-bottom: 10px;
@@ -426,7 +433,7 @@
   }
   .bullet-list li {
     font-size: 14px;
-    line-height: 1.48;
+    line-height: 1.58;
     color: var(--slate);
     position: relative;
     padding-left: 20px;
@@ -463,18 +470,20 @@
 
   /* Slide 1 Hero */
   .hero-main-title {
-    font-size: 36px;
-    font-weight: 900;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 35px;
+    font-weight: 700;
     color: var(--primary);
-    line-height: 1.18;
+    line-height: 1.28;
     margin-bottom: 14px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
   .hero-subtitle {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--slate-light);
     margin-bottom: 24px;
-    line-height: 1.4;
+    line-height: 1.5;
+    font-weight: 450;
   }
   .hero-metrics {
     display: grid;
@@ -497,15 +506,16 @@
     margin-bottom: 5px;
   }
   .m-val {
-    font-size: 20px;
-    font-weight: 800;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 21px;
+    font-weight: 700;
     color: var(--primary);
     margin-bottom: 3px;
   }
   .m-desc {
     font-size: 13px;
     color: var(--slate-light);
-    line-height: 1.35;
+    line-height: 1.38;
   }
 
   /* Slide 3: Food Clusters Stack */
@@ -533,22 +543,23 @@
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     flex-shrink: 0;
   }
   .obj-text {
     flex: 1;
   }
   .obj-name {
-    font-size: 15.5px;
-    font-weight: 750;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16.5px;
+    font-weight: 600;
     color: var(--primary);
     margin-bottom: 3px;
   }
   .obj-sub {
     font-size: 13.5px;
     color: var(--slate);
-    line-height: 1.35;
+    line-height: 1.4;
   }
   .obj-tag {
     background: #f8fafc;
@@ -590,14 +601,15 @@
     width: fit-content;
   }
   .feat-title {
-    font-size: 16px;
-    font-weight: 750;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16.5px;
+    font-weight: 600;
     color: var(--primary);
   }
   .feat-desc {
     font-size: 13px;
     color: var(--slate);
-    line-height: 1.4;
+    line-height: 1.45;
   }
 
   /* ================= MOBILE ADAPTATION ================= */
